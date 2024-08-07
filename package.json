@@ -17,5 +17,6 @@
   },
   "dependencies": {
     "core-js": "^3.38.0"
-  }
+  },
+  "type": "module"
 }
