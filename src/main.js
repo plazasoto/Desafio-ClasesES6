@@ -3,7 +3,7 @@ import { Impuestos } from "./impuestos.js";
 
 console.log("--------------------------------PROBANDO--------------------------------");
 
-console.log("\n---Creando cliente 1 con nombre e impuesto---");
+console.log("\n---Creando cliente 1, con nombre e impuesto---");
 let i1 = new Impuestos(100, 10);
 let c1 = new Cliente("Mario", i1);
 console.log(`--Objeto Impuestos:`);
@@ -19,14 +19,14 @@ console.log(`--Cambio de impuesto y recalculando:`);
 c1.impuesto = new Impuestos(200, 50);
 console.log(`calcularImpuesto() : ${c1.calcularImpuesto()}`);
 
-console.log("\n---Creando cliente 2 con nombre y sin impuesto---");
+console.log("\n---Creando cliente 2, con nombre y sin impuesto---");
 let c2 = new Cliente("Carla");
 console.log(`--Objeto Cliente:`);
 console.log(c2);
 console.log(`get nombre() : ${c2.nombre}`);
 console.log(`calcularImpuesto() : ${c2.calcularImpuesto()}`);
 
-console.log("\n---Creando cliente 3 sin nombre ni impuesto---");
+console.log("\n---Creando cliente 3, sin nombre ni impuesto---");
 let c3 = new Cliente();
 console.log(`--Objeto Cliente:`);
 console.log(c3);
