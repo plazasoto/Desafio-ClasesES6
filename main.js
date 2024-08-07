@@ -6,3 +6,7 @@ let i1 = new Impuesto();
 
 console.log(c1);
 console.log(i1);
+
+console.log(c1.nombre);
+c1.nombre = "Super Mario";
+console.log(c1.nombre);
