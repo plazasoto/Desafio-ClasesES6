@@ -1,12 +1,12 @@
 import { Cliente } from "./cliente.js";
-import { Impuesto } from "./impuestos.js";
+import { Impuestos } from "./impuestos.js";
 
 console.log("--------------------------------PROBANDO--------------------------------");
 
 console.log("\n---Creando cliente 1 con nombre e impuesto---");
-let i1 = new Impuesto(100, 10);
+let i1 = new Impuestos(100, 10);
 let c1 = new Cliente("Mario", i1);
-console.log(`--Objeto Impuesto:`);
+console.log(`--Objeto Impuestos:`);
 console.log(i1);
 console.log(`--Objeto Cliente:`);
 console.log(c1);
@@ -16,7 +16,7 @@ console.log(`--Cambio de nombre con setter:`);
 c1.nombre = "Luigi";
 console.log(`get nombre() : ${c1.nombre}`);
 console.log(`--Cambio de impuesto y recalculando:`);
-c1.impuesto = new Impuesto(200, 50);
+c1.impuesto = new Impuestos(200, 50);
 console.log(`calcularImpuesto() : ${c1.calcularImpuesto()}`);
 
 console.log("\n---Creando cliente 2 con nombre y sin impuesto---");
@@ -36,7 +36,7 @@ c3.nombre = "Pedro";
 console.log(`get nombre() : ${c3.nombre}`);
 
 console.log(`--Agregando impuesto:`);
-c3.impuesto = new Impuesto(66, 6);
+c3.impuesto = new Impuestos(66, 6);
 console.log(`--Objeto Impuesto:`);
 console.log(c3.impuesto);
 console.log(`calcularImpuesto() : ${c3.calcularImpuesto()}`);
